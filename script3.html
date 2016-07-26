@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formularios</title>
+    </head>
+    <body>
+        <header>
+            <h1>Datos personales</h1>
+        </header>
+        <section>
+            <form method="POST" action="">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" required title="Minimo 2 máximo 20 caracteres" pattern="[a-zA-Z]{2,20}"/> 
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" required maxlength="20" title="Máximo 20 caracteres" pattern="[a-zA-Z]"/>
+                </div>
+                <div>
+                    <label for="genero">Género:</label>
+                    <select name="genero">
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" required min="1" max="99" title="Debe proporcionar edad"/>
+                </div>
+                <div>
+                    <label for="nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" name="nacimiento" required/>
+                </div>
+                <div>
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" required title="Ingrese un correo válido"/>
+                </div>
+                <input type="submit" value="Registrarme">
+            </form>
+        </section>
+        
+        <footer>
+            <p>Hecho por: Rebeca Ben&iacute;tez &copy; Derechos reservados 2016</p>
+        </footer>
+    </body>
+</html>
